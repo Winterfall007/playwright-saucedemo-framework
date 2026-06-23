@@ -17,8 +17,9 @@ jobs:
       run: npm ci
     - name: Install Playwright Browsers
       run: |
-        echo "Before install"
+        echo "Before"
         npx playwright --version
+        echo "After"
         npx playwright install chromium
         echo "After install"    
     - name: Run Playwright tests
