@@ -18,6 +18,13 @@ Tech Stack
 - Node.js
 - GitHub Actions
 
+CI/CD
+
+- GitHub Actions integration
+- Automated Playwright execution on push
+- HTML report artifact generation
+- Trace retention on failure
+
 Future Enhancements
 - API validation
 - Fixtures for authentication
