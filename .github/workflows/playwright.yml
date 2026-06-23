@@ -16,12 +16,7 @@ jobs:
     - name: Install dependencies
       run: npm ci
     - name: Install Playwright Browsers
-      run: |
-        echo "Before"
-        npx playwright --version
-        echo "After"
-        npx playwright install chromium
-        echo "After install"    
+      run: PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1 npx playwright --version
     - name: Run Playwright tests
       run: npx playwright test
     - uses: actions/upload-artifact@v4
