@@ -2,7 +2,7 @@
   "name": "playwright-saucedemo-framework",
   "version": "1.0.0",
   "description": "Playwright TypeScript automation framework for SauceDemo",
-  "type": "module",
+  
   "scripts": {
     "test": "playwright test",
     "test:ui": "playwright test --ui",
@@ -12,5 +12,9 @@
   "devDependencies": {
     "@playwright/test": "^1.59.1",
     "@types/node": "^25.6.0"
+  },
+  "dependencies": {
+    "playwright": "^1.61.1",
+    "typescript": "^6.0.3"
   }
 }

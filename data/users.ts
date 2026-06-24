@@ -4,7 +4,12 @@ export const validUser = {
   zip: '12345'
 };
 
-export const standardUser = {
+export interface LoginUser {
+  username: string;
+  password: string;
+};
+
+export const standardUser: LoginUser = {
   username: 'standard_user',
   password: 'secret_sauce',
 };

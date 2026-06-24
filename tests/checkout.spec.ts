@@ -3,6 +3,7 @@ import { LoginPage } from '../pages/login.page';
 import { InventoryPage } from '../pages/inventory.page';
 import { CheckoutPage } from '../pages/checkout.page';
 import { validUser } from '../data/users';
+import { LoginUser } from '../data/users';
 
 
 
