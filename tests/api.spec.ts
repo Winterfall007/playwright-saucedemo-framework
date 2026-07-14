@@ -1,13 +1,12 @@
 import { test, expect } from '@playwright/test';
+import { AuthService } from '../services/AuthService';
 
 test('authenticated request returns user data', async ({ request }) => {
 
   const response = await request.get(
     'https://reqres.in/api/users/2',
     {
-      headers: {
-        'x-api-key': 'free_user_3FaUMgOB7sD31mY5sRd7uxHCTz1'
-      }
+      headers: AuthService.headers()
     }
   );
 
