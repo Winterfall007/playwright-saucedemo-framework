@@ -1,9 +1,17 @@
 export class AuthService {
 
   static headers() {
+
+    const apiKey = process.env.REQRES_API_KEY;
+
+    if (!apiKey) {
+      throw new Error('REQRES_API_KEY is not defined in the environment');
+    }
+
     return {
-      'x-api-key': 'reqres_eae954542ca949708992d70b4f66c611'
+      'x-api-key': apiKey
     };
+
   }
 
 }
