@@ -12,4 +12,7 @@ export class CartPage {
 
     await this.page.click('[data-test="checkout"]');
   }
+  async continueShopping() {
+     await this.page.click('[data-test="continue-shopping"]');
+    }
 }

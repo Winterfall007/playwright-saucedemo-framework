@@ -4,6 +4,10 @@
 Automation framework built with Playwright and TypeScript
 against the SauceDemo application by SauceLabs.
 
+
+## Latest Update
+- Added Cart tests and Continue Shopping method; Cleaned up commit history.
+
 ## Features
 - Page Object Model architecture
 - Positive checkout testing
@@ -28,9 +32,6 @@ against the SauceDemo application by SauceLabs.
 - Trace retention on failure
 
 ## Future Enhancements
-
 - Fixtures for authentication
 - Reporting improvements
-- Docker execution
 - Expanded API test coverage
-- Environment-specific configuration
